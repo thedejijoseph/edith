@@ -7,3 +7,6 @@
 !static/bootstrap/css/bootstrap.min.css
 !static/bootstrap/js/bootstrap.bundle.min.js
 !static/jquery/jquery.min.js
+
+# ignore virtual env
+venv/
