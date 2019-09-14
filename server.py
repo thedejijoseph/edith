@@ -22,12 +22,17 @@ class Activity(BaseHandler):
         # process request: ajax
         pass
 
+class AboutPage(BaseHandler):
+    def get(self):
+        self.render('about.html')
+
 from tornado.options import define
 define("port", default=3308, type=int)
 
 handlers = [
     (r"/", IndexPage),
-    (r"/fancy", Activity)
+    (r"/fancy", Activity),
+    (r"/about", AboutPage)
 ]
 
 # switch debug mode on or off
