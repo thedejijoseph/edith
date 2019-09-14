@@ -14,9 +14,9 @@ class IndexPage(BaseHandler):
     def get(self):
        self.render('index.html')
 
-class Activity(BaseHandler):
+class Connect(BaseHandler):
     def get(self):
-        self.render('page.html')
+        self.render('connect.html')
     
     def post(self):
         # process request: ajax
@@ -31,7 +31,7 @@ define("port", default=3308, type=int)
 
 handlers = [
     (r"/", IndexPage),
-    (r"/fancy", Activity),
+    (r"/connect", Connect),
     (r"/about", AboutPage)
 ]
 
